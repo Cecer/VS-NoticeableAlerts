@@ -13,4 +13,4 @@ dest_path="/home/chris/.var/app/at.vintagestory.VintageStory/config/Vintagestory
 
 "$project_dir/build.sh";
 sudo mount --bind "$src_path" "$dest_path";
-printf "Bind mounted $src_path at $dest_path\n";
+printf "Bind mounted %s at %s\n" "$src_path" "$dest_path";
