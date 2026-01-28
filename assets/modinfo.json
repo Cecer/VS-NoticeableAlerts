@@ -1,0 +1,14 @@
+{
+    "type": "code",
+    "modid": "noticeablealerts",
+    "name": "Noticeable Alerts",
+    "description": "Makes important alerts harder to miss. Configured for Vintage Rift by default.",
+    "authors": [ "Cecer" ],
+    "version": "0.0.1",
+    "dependencies": { 
+        "game": "1.21.6"
+    },
+    "side": "Client",
+    "requiredOnClient": true,
+    "requiredOnServer": false
+}
