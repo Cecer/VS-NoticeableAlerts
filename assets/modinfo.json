@@ -4,7 +4,7 @@
     "name": "Noticeable Alerts",
     "description": "Makes important alerts harder to miss. Configured for Vintage Rift by default.",
     "authors": [ "Cecer" ],
-    "version": "0.0.1",
+    "version": "1.0.0",
     "dependencies": { 
         "game": "1.21.6"
     },
