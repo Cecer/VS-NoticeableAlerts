@@ -53,11 +53,13 @@ public class NoticeableAlertsModSystem : ModSystem
 
         foreach (var alert in _alerts)
         {
-            if (alert.Pattern.IsMatch(message))
+            var match = alert.Pattern.Match(message);
+            if (match.Success)
             {
                 if (alert.DisplayText != null)
                 {
-                    _api?.TriggerIngameDiscovery(this, "", alert.DisplayText);
+                    var text = string.Format(alert.DisplayText, match.Groups.Values.Skip(1).Select(g => g.Value).ToArray<object>());
+                    _api?.TriggerIngameDiscovery(this, "", text);
                 }
 
                 if (alert.SoundLocation != null)
