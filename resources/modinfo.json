@@ -1,0 +1,15 @@
+{
+    "type": "code",
+    "modid": "noticeablealerts",
+    "name": null,
+    "description": null,
+    "authors": null,
+    "version": null,
+    "website": null,
+    "dependencies": {
+        "game": "1.21.6"
+    },
+    "side": "Client",
+    "requiredOnClient": false,
+    "requiredOnServer": false
+}
